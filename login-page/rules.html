@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Rules & Regulations</title>
+
+    <link rel="stylesheet" href="./rules.css">
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+</head>
+
+<body>
+
+    <!-- =========================
+         SIDEBAR
+    ========================== -->
+
+    <aside class="sidebar">
+
+        <div class="sidebar-logo">
+            <i class="fa-solid fa-rocket"></i>
+            <span>Startup Risk</span>
+        </div>
+
+
+        <nav class="sidebar-nav">
+
+            <a href="./dashboard.html" class="nav-item">
+                <i class="fa-solid fa-chart-line"></i>
+                <span>Dashboard</span>
+            </a>
+
+            <a href="./analysis.html" class="nav-item">
+                <i class="fa-solid fa-magnifying-glass-chart"></i>
+                <span>Analysis</span>
+            </a>
+
+            <a href="./improvements.html" class="nav-item">
+                <i class="fa-solid fa-lightbulb"></i>
+                <span>Improvements</span>
+            </a>
+
+            <a href="./tracking.html" class="nav-item">
+                <i class="fa-solid fa-chart-simple"></i>
+                <span>Tracking</span>
+            </a>
+
+            <a href="./rules.html" class="nav-item active">
+                <i class="fa-solid fa-scale-balanced"></i>
+                <span>Rules & Regulations</span>
+            </a>
+
+        </nav>
+
+
+        <div class="sidebar-bottom">
+
+            <button id="logoutBtn" class="logout-btn">
+
+                <i class="fa-solid fa-right-from-bracket"></i>
+
+                <span>Logout</span>
+
+            </button>
+
+        </div>
+
+    </aside>
+
+
+    <!-- =========================
+         MAIN CONTENT
+    ========================== -->
+
+    <main class="main-content">
+
+
+        <!-- HEADER -->
+
+        <div class="page-header">
+
+            <h1>Rules & Regulations</h1>
+
+            <p>
+                Review important compliance areas for your startup.
+            </p>
+
+        </div>
+
+
+        <!-- =========================
+             NO ANALYSIS
+        ========================== -->
+
+        <section id="noAnalysis" class="no-analysis">
+
+            <i class="fa-solid fa-scale-balanced"></i>
+
+            <h2>No Startup Analysis Available</h2>
+
+            <p>
+                Complete a startup analysis first to view
+                relevant compliance areas.
+            </p>
+
+            <a href="./analysis.html" class="analysis-btn">
+
+                <i class="fa-solid fa-chart-line"></i>
+
+                Go to Analysis
+
+            </a>
+
+        </section>
+
+
+        <!-- =========================
+             RULE CONTENT
+        ========================== -->
+
+        <section id="rulesContent" class="hidden">
+
+
+            <!-- STARTUP INFORMATION -->
+
+            <div class="startup-card">
+
+                <div class="startup-icon">
+
+                    <i class="fa-solid fa-building"></i>
+
+                </div>
+
+
+                <div>
+
+                    <span>Latest Startup</span>
+
+                    <h2 id="startupName">
+                        -
+                    </h2>
+
+                    <p id="startupInfo">
+                        -
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- =========================
+                 COMPLIANCE OVERVIEW
+            ========================== -->
+
+            <div class="section-title">
+
+                <h2>Compliance Overview</h2>
+
+                <p>
+                    Important areas your startup should review.
+                </p>
+
+            </div>
+
+
+            <div class="compliance-grid">
+
+
+                <!-- BUSINESS REGISTRATION -->
+
+                <div class="compliance-card">
+
+                    <div class="compliance-icon">
+
+                        <i class="fa-solid fa-building-columns"></i>
+
+                    </div>
+
+                    <div>
+
+                        <h3>Business Registration</h3>
+
+                        <p>
+                            Ensure the business is properly registered
+                            under the applicable legal structure.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- TAX -->
+
+                <div class="compliance-card">
+
+                    <div class="compliance-icon">
+
+                        <i class="fa-solid fa-file-invoice-dollar"></i>
+
+                    </div>
+
+                    <div>
+
+                        <h3>Tax & GST</h3>
+
+                        <p>
+                            Review applicable income tax, GST and
+                            other statutory tax obligations.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- IP -->
+
+                <div class="compliance-card">
+
+                    <div class="compliance-icon">
+
+                        <i class="fa-solid fa-copyright"></i>
+
+                    </div>
+
+                    <div>
+
+                        <h3>Intellectual Property</h3>
+
+                        <p>
+                            Consider protecting trademarks,
+                            copyrights, patents and other IP assets.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- DATA -->
+
+                <div class="compliance-card">
+
+                    <div class="compliance-icon">
+
+                        <i class="fa-solid fa-shield-halved"></i>
+
+                    </div>
+
+                    <div>
+
+                        <h3>Data Protection</h3>
+
+                        <p>
+                            Review requirements for handling,
+                            storing and protecting customer data.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- EMPLOYMENT -->
+
+                <div class="compliance-card">
+
+                    <div class="compliance-icon">
+
+                        <i class="fa-solid fa-users"></i>
+
+                    </div>
+
+                    <div>
+
+                        <h3>Employment & Labour</h3>
+
+                        <p>
+                            Review applicable employee contracts,
+                            wages, benefits and labour requirements.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- INDUSTRY -->
+
+                <div class="compliance-card">
+
+                    <div class="compliance-icon">
+
+                        <i class="fa-solid fa-industry"></i>
+
+                    </div>
+
+                    <div>
+
+                        <h3>Industry Compliance</h3>
+
+                        <p id="industryCompliance">
+                            Review regulations applicable to your industry.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+            <!-- =========================
+                 IMPORTANT REGULATIONS
+            ========================== -->
+
+            <div class="section-title">
+
+                <h2>Important Areas to Review</h2>
+
+                <p>
+                    These areas may require attention depending on your startup.
+                </p>
+
+            </div>
+
+
+            <div id="regulationList" class="regulation-list">
+            </div>
+
+
+            <!-- =========================
+                 CHECKLIST
+            ========================== -->
+
+            <div class="section-title">
+
+                <h2>Compliance Checklist</h2>
+
+                <p>
+                    Use this checklist as a starting point for reviewing
+                    your startup's compliance requirements.
+                </p>
+
+            </div>
+
+
+            <div class="checklist">
+
+
+                <label class="check-item">
+
+                    <input type="checkbox">
+
+                    <span>
+                        Business registration reviewed
+                    </span>
+
+                </label>
+
+
+                <label class="check-item">
+
+                    <input type="checkbox">
+
+                    <span>
+                        Tax and GST requirements reviewed
+                    </span>
+
+                </label>
+
+
+                <label class="check-item">
+
+                    <input type="checkbox">
+
+                    <span>
+                        Intellectual property protection reviewed
+                    </span>
+
+                </label>
+
+
+                <label class="check-item">
+
+                    <input type="checkbox">
+
+                    <span>
+                        Privacy and data protection requirements reviewed
+                    </span>
+
+                </label>
+
+
+                <label class="check-item">
+
+                    <input type="checkbox">
+
+                    <span>
+                        Employment and labour requirements reviewed
+                    </span>
+
+                </label>
+
+
+                <label class="check-item">
+
+                    <input type="checkbox">
+
+                    <span id="industryChecklist">
+                        Industry-specific requirements reviewed
+                    </span>
+
+                </label>
+
+
+            </div>
+
+
+            <!-- =========================
+                 DISCLAIMER
+            ========================== -->
+
+            <div class="disclaimer">
+
+                <div class="disclaimer-icon">
+
+                    <i class="fa-solid fa-circle-info"></i>
+
+                </div>
+
+
+                <div>
+
+                    <h3>Important Notice</h3>
+
+                    <p>
+                        This section provides general information
+                        for startup planning and awareness. It does
+                        not constitute legal, tax or professional advice.
+                        Requirements may vary depending on the business,
+                        industry, location and applicable laws. Consult
+                        a qualified professional or the relevant
+                        government authority for specific requirements.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+    </main>
+
+
+    <script src="./rules.js"></script>
+
+</body>
+
+</html>

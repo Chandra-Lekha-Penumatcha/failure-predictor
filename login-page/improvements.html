@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Startup Improvements</title>
+
+    <link rel="stylesheet" href="./improvements.css">
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+</head>
+
+<body>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+        <div class="sidebar-logo">
+            <i class="fa-solid fa-rocket"></i>
+            <span>Startup Risk</span>
+        </div>
+
+        <nav class="sidebar-nav">
+
+            <a href="./dashboard.html" class="nav-item">
+                <i class="fa-solid fa-chart-line"></i>
+                <span>Dashboard</span>
+            </a>
+
+            <a href="./analysis.html" class="nav-item">
+                <i class="fa-solid fa-magnifying-glass-chart"></i>
+                <span>Analysis</span>
+            </a>
+
+            <a href="./improvements.html" class="nav-item active">
+                <i class="fa-solid fa-lightbulb"></i>
+                <span>Improvements</span>
+            </a>
+
+            <a href="./tracking.html" class="nav-item">
+                <i class="fa-solid fa-chart-simple"></i>
+                <span>Tracking</span>
+            </a>
+
+            <a href="./rules.html" class="nav-item">
+                <i class="fa-solid fa-scale-balanced"></i>
+                <span>Rules & Regulations</span>
+            </a>
+
+        </nav>
+
+        <div class="sidebar-bottom">
+
+            <button id="logoutBtn" class="logout-btn">
+                <i class="fa-solid fa-right-from-bracket"></i>
+                <span>Logout</span>
+            </button>
+
+        </div>
+
+    </aside>
+
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+
+        <div class="page-header">
+
+            <h1>Startup Improvements</h1>
+
+            <p>
+                Improve your startup based on the latest risk analysis.
+            </p>
+
+        </div>
+
+
+        <!-- NO ANALYSIS MESSAGE -->
+
+        <section id="noAnalysis" class="no-analysis">
+
+            <i class="fa-solid fa-lightbulb"></i>
+
+            <h2>No Analysis Available</h2>
+
+            <p>
+                Complete a startup analysis first to receive
+                personalized improvement recommendations.
+            </p>
+
+            <a href="./analysis.html" class="analysis-btn">
+                <i class="fa-solid fa-chart-line"></i>
+                Go to Analysis
+            </a>
+
+        </section>
+
+
+        <!-- ANALYSIS CONTENT -->
+
+        <section id="improvementContent" class="hidden">
+
+
+            <!-- STARTUP HEADER -->
+
+            <div class="startup-card">
+
+                <div class="startup-icon">
+                    <i class="fa-solid fa-building"></i>
+                </div>
+
+                <div>
+
+                    <span>Latest Analysis</span>
+
+                    <h2 id="startupName">
+                        Startup
+                    </h2>
+
+                    <p id="startupInfo">
+                        -
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- RISK OVERVIEW -->
+
+            <div class="section-title">
+
+                <h2>Risk Overview</h2>
+
+                <p>
+                    Current startup health and risk indicators.
+                </p>
+
+            </div>
+
+
+            <div class="risk-grid">
+
+
+                <div class="risk-card">
+
+                    <div class="risk-icon health">
+                        <i class="fa-solid fa-heart-pulse"></i>
+                    </div>
+
+                    <div>
+
+                        <span>Health Score</span>
+
+                        <h2 id="healthScore">
+                            -
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <div class="risk-card">
+
+                    <div class="risk-icon success">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </div>
+
+                    <div>
+
+                        <span>Success Probability</span>
+
+                        <h2 id="successProbability">
+                            -
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <div class="risk-card">
+
+                    <div class="risk-icon failure">
+                        <i class="fa-solid fa-triangle-exclamation"></i>
+                    </div>
+
+                    <div>
+
+                        <span>Failure Probability</span>
+
+                        <h2 id="failureProbability">
+                            -
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <div class="risk-card">
+
+                    <div class="risk-icon risk">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+
+                    <div>
+
+                        <span>Overall Risk</span>
+
+                        <h2 id="overallRisk">
+                            -
+                        </h2>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- RISK AREAS -->
+
+            <div class="section-title">
+
+                <h2>Risk Areas</h2>
+
+                <p>
+                    Areas that may require attention.
+                </p>
+
+            </div>
+
+
+            <div class="risk-area-grid">
+
+
+                <div class="risk-area">
+
+                    <div class="area-header">
+
+                        <i class="fa-solid fa-coins"></i>
+
+                        <h3>Financial Risk</h3>
+
+                    </div>
+
+                    <p id="financialRisk">
+                        -
+                    </p>
+
+                </div>
+
+
+                <div class="risk-area">
+
+                    <div class="area-header">
+
+                        <i class="fa-solid fa-chart-pie"></i>
+
+                        <h3>Market Risk</h3>
+
+                    </div>
+
+                    <p id="marketRisk">
+                        -
+                    </p>
+
+                </div>
+
+
+                <div class="risk-area">
+
+                    <div class="area-header">
+
+                        <i class="fa-solid fa-users"></i>
+
+                        <h3>Team Risk</h3>
+
+                    </div>
+
+                    <p id="teamRisk">
+                        -
+                    </p>
+
+                </div>
+
+
+                <div class="risk-area">
+
+                    <div class="area-header">
+
+                        <i class="fa-solid fa-gears"></i>
+
+                        <h3>Operations Risk</h3>
+
+                    </div>
+
+                    <p id="operationsRisk">
+                        -
+                    </p>
+
+                </div>
+
+
+                <div class="risk-area">
+
+                    <div class="area-header">
+
+                        <i class="fa-solid fa-building-columns"></i>
+
+                        <h3>Business Environment</h3>
+
+                    </div>
+
+                    <p id="businessEnvironmentRisk">
+                        -
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- RISK FACTORS -->
+
+            <div class="section-title">
+
+                <h2>Key Risk Factors</h2>
+
+                <p>
+                    Factors identified from your startup analysis.
+                </p>
+
+            </div>
+
+
+            <div id="riskFactors" class="risk-factors">
+            </div>
+
+
+            <!-- RECOMMENDATIONS -->
+
+            <div class="section-title">
+
+                <h2>Recommended Improvements</h2>
+
+                <p>
+                    Actions you can take to reduce startup failure risk.
+                </p>
+
+            </div>
+
+
+            <div id="recommendations" class="recommendations">
+            </div>
+
+
+        </section>
+
+    </main>
+
+
+    <script src="./improvements.js"></script>
+
+</body>
+</html>

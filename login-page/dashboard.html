@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard - Startup Failure Predictor</title>
+
+    <link rel="stylesheet" href="./dashboard.css">
+</head>
+
+<body>
+
+    <!-- FIXED SIDEBAR -->
+    <aside class="sidebar">
+
+        <div class="sidebar-header">
+            <div class="logo">🚀</div>
+
+            <div>
+                <h2>Startup Predictor</h2>
+                <p>Risk Platform</p>
+            </div>
+        </div>
+
+
+        <nav class="sidebar-nav">
+
+            <a href="./dashboard.html" class="nav-item active">
+                <span>🏠</span>
+                <span>Dashboard</span>
+            </a>
+
+            <a href="./analysis.html" class="nav-item">
+                <span>📊</span>
+                <span>Analysis</span>
+            </a>
+
+            <a href="./improvements.html" class="nav-item">
+                <span>💡</span>
+                <span>Improvements</span>
+            </a>
+
+            <a href="./tracking.html" class="nav-item">
+                <span>📈</span>
+                <span>Tracking</span>
+            </a>
+
+            <a href="./rules.html" class="nav-item">
+                <span>📋</span>
+                <span>Rules & Regulations</span>
+            </a>
+
+        </nav>
+
+
+        <!-- LOGOUT AT BOTTOM -->
+        <div class="sidebar-bottom">
+
+            <button id="logoutBtn" class="logout-btn">
+                <span>🚪</span>
+                <span>Logout</span>
+            </button>
+
+        </div>
+
+    </aside>
+
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+
+        <header class="page-header">
+
+            <div>
+                <h1>Startup Failure Predictor</h1>
+
+                <p>
+                    AI-Powered Startup Risk Assessment Platform
+                </p>
+            </div>
+
+        </header>
+
+
+        <!-- WELCOME -->
+        <section class="welcome-section">
+
+            <h2>
+                Welcome back, <span id="userName">User</span> 👋
+            </h2>
+
+            <p>
+                Analyze your startup, identify potential risks,
+                track progress, and get improvement recommendations.
+            </p>
+
+        </section>
+
+
+        <!-- NAVIGATION CARDS -->
+        <section class="dashboard-options">
+
+            <a href="./analysis.html" class="dashboard-card">
+
+                <div class="card-icon">📊</div>
+
+                <div>
+                    <h3>Analysis</h3>
+
+                    <p>
+                        Analyze your startup's financial,
+                        market, team and operational risks.
+                    </p>
+                </div>
+
+                <span class="arrow">→</span>
+
+            </a>
+
+
+            <a href="./improvements.html" class="dashboard-card">
+
+                <div class="card-icon">💡</div>
+
+                <div>
+                    <h3>Improvements</h3>
+
+                    <p>
+                        Get recommendations to improve
+                        startup health and reduce risk.
+                    </p>
+                </div>
+
+                <span class="arrow">→</span>
+
+            </a>
+
+
+            <a href="./tracking.html" class="dashboard-card">
+
+                <div class="card-icon">📈</div>
+
+                <div>
+                    <h3>Tracking</h3>
+
+                    <p>
+                        Track previous startup analyses
+                        and monitor risk changes.
+                    </p>
+                </div>
+
+                <span class="arrow">→</span>
+
+            </a>
+
+
+            <a href="./rules.html" class="dashboard-card">
+
+                <div class="card-icon">📋</div>
+
+                <div>
+                    <h3>Rules & Regulations</h3>
+
+                    <p>
+                        Review important compliance areas
+                        relevant to your startup.
+                    </p>
+                </div>
+
+                <span class="arrow">→</span>
+
+            </a>
+
+        </section>
+
+
+        <!-- PROJECT INFORMATION -->
+        <section class="project-info">
+
+            <h2>About the Platform</h2>
+
+            <p>
+                Startup Failure Predictor is an AI-powered platform
+                designed to evaluate startup risk using financial,
+                market, team, operational and business information.
+            </p>
+
+            <p>
+                Use the Analysis section to assess your startup and
+                explore Improvements, Tracking and Rules & Regulations
+                based on your analysis.
+            </p>
+
+        </section>
+
+
+        <footer>
+            Startup Failure Predictor © 2026
+        </footer>
+
+    </main>
+
+
+    <script src="./dashboard.js"></script>
+
+</body>
+</html>

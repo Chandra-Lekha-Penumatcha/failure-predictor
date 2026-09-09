@@ -1,0 +1,1083 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Startup Analysis - Startup Failure Predictor</title>
+
+    <link
+        rel="stylesheet"
+        href="./analysis.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- ==========================================
+         SIDEBAR
+    =========================================== -->
+
+    <aside class="sidebar">
+
+
+        <!-- LOGO -->
+
+        <div class="sidebar-logo">
+
+            <div class="logo-icon">
+
+                <i class="fa-solid fa-rocket"></i>
+
+            </div>
+
+
+            <div class="logo-text">
+
+                <h3>
+                    Startup Predictor
+                </h3>
+
+                <span>
+                    Predict. Analyze. Decide.
+                </span>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- ======================================
+             NAVIGATION
+        ======================================= -->
+
+        <nav class="sidebar-nav">
+
+
+            <!-- DASHBOARD -->
+
+            <a
+                href="./dashboard.html"
+                class="nav-item"
+            >
+
+                <i class="fa-solid fa-chart-line"></i>
+
+                <span>
+                    Dashboard
+                </span>
+
+            </a>
+
+
+
+            <!-- ANALYSIS -->
+
+            <a
+                href="./analysis.html"
+                class="nav-item active"
+            >
+
+                <i class="fa-solid fa-magnifying-glass-chart"></i>
+
+                <span>
+                    Analysis
+                </span>
+
+            </a>
+
+
+
+            <!-- IMPROVEMENTS -->
+
+            <a
+                href="./improvements.html"
+                class="nav-item"
+            >
+
+                <i class="fa-solid fa-lightbulb"></i>
+
+                <span>
+                    Improvements
+                </span>
+
+            </a>
+
+
+
+            <!-- TRACKING -->
+
+            <a
+                href="./tracking.html"
+                class="nav-item"
+            >
+
+                <i class="fa-solid fa-chart-simple"></i>
+
+                <span>
+                    Tracking
+                </span>
+
+            </a>
+
+
+
+            <!-- RULES & REGULATIONS -->
+
+            <a
+                href="./rules.html"
+                class="nav-item"
+            >
+
+                <i class="fa-solid fa-scale-balanced"></i>
+
+                <span>
+                    Rules & Regulations
+                </span>
+
+            </a>
+
+
+        </nav>
+
+
+
+        <!-- ======================================
+             LOGOUT
+        ======================================= -->
+
+        <div class="sidebar-bottom">
+
+            <button
+                type="button"
+                class="nav-item logout-button"
+                id="logoutBtn"
+            >
+
+                <i class="fa-solid fa-right-from-bracket"></i>
+
+                <span>
+                    Logout
+                </span>
+
+            </button>
+
+        </div>
+
+
+    </aside>
+
+
+
+    <!-- ==========================================
+         MAIN CONTENT
+    =========================================== -->
+
+    <main class="main-content">
+
+
+        <!-- ======================================
+             PAGE HEADER
+        ======================================= -->
+
+        <div class="page-header">
+
+            <h1>
+                Startup Analysis
+            </h1>
+
+            <p>
+                Enter your startup details to analyze
+                potential risks and receive AI-powered
+                recommendations.
+            </p>
+
+        </div>
+
+
+
+        <!-- ==========================================
+             STARTUP INFORMATION
+        =========================================== -->
+
+        <div class="analysis-card">
+
+
+            <div class="tab-content active">
+
+
+                <h2>
+
+                    <i class="fa-solid fa-building"></i>
+
+                    Startup Information
+
+                </h2>
+
+
+
+                <div class="form-container">
+
+
+                    <!-- ==================================
+                         STARTUP NAME
+                    =================================== -->
+
+                    <div class="form-group">
+
+                        <label for="startupName">
+
+                            Startup Name
+
+                        </label>
+
+
+                        <input
+                            type="text"
+                            id="startupName"
+                            placeholder="Enter startup name"
+                        >
+
+                    </div>
+
+
+
+                    <!-- ==================================
+                         INDUSTRY
+                    =================================== -->
+
+                    <div class="form-group">
+
+                        <label for="industry">
+
+                            Industry
+
+                        </label>
+
+
+                        <input
+                            type="text"
+                            id="industry"
+                            placeholder="Example: Technology"
+                        >
+
+                    </div>
+
+
+
+                    <!-- ==================================
+                         FOUNDED YEAR
+                    =================================== -->
+
+                    <div class="form-group">
+
+                        <label for="foundedYear">
+
+                            Founded Year
+
+                        </label>
+
+
+                        <input
+                            type="number"
+                            id="foundedYear"
+                            min="1900"
+                            max="2026"
+                            placeholder="Example: 2023"
+                        >
+
+                    </div>
+
+
+
+                    <!-- ==================================
+                         STARTUP AGE
+                    =================================== -->
+
+                    <div class="form-group">
+
+                        <label for="startupAge">
+
+                            Startup Age (Years)
+
+                        </label>
+
+
+                        <input
+                            type="number"
+                            id="startupAge"
+                            min="0"
+                            step="0.1"
+                            placeholder="Example: 3"
+                        >
+
+                    </div>
+
+
+
+                    <!-- ==================================
+                         NUMBER OF FOUNDERS
+                    =================================== -->
+
+                    <div class="form-group">
+
+                        <label for="numberOfFounders">
+
+                            Number of Founders
+
+                        </label>
+
+
+                        <input
+                            type="number"
+                            id="numberOfFounders"
+                            min="1"
+                            placeholder="Example: 2"
+                        >
+
+                    </div>
+
+
+
+                    <!-- ==================================
+                         FOUNDER EXPERIENCE
+                    =================================== -->
+
+                    <div class="form-group">
+
+                        <label for="founderExperience">
+
+                            Founder Experience (Years)
+
+                        </label>
+
+
+                        <input
+                            type="number"
+                            id="founderExperience"
+                            min="0"
+                            step="0.1"
+                            placeholder="Example: 5"
+                        >
+
+                    </div>
+
+
+
+                    <!-- ==================================
+                         EMPLOYEES
+                    =================================== -->
+
+                    <div class="form-group">
+
+                        <label for="employeesCount">
+
+                            Number of Employees
+
+                        </label>
+
+
+                        <input
+                            type="number"
+                            id="employeesCount"
+                            min="1"
+                            placeholder="Example: 10"
+                        >
+
+                    </div>
+
+
+
+                    <!-- ==================================
+                         MARKET SIZE
+                    =================================== -->
+
+                    <div class="form-group">
+
+                        <label for="marketSize">
+
+                            Market Size
+
+                        </label>
+
+
+                        <select id="marketSize">
+
+                            <option value="">
+
+                                Select Market Size
+
+                            </option>
+
+
+                            <option value="Small">
+
+                                Small
+
+                            </option>
+
+
+                            <option value="Medium">
+
+                                Medium
+
+                            </option>
+
+
+                            <option value="Large">
+
+                                Large
+
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+
+                    <!-- ==================================
+                         BUSINESS MODEL
+                    =================================== -->
+
+                    <div class="form-group">
+
+                        <label for="businessModel">
+
+                            Business Model
+
+                        </label>
+
+
+                        <select id="businessModel">
+
+                            <option value="">
+
+                                Select Business Model
+
+                            </option>
+
+
+                            <option value="B2B">
+
+                                B2B
+
+                            </option>
+
+
+                            <option value="B2C">
+
+                                B2C
+
+                            </option>
+
+
+                            <option value="SaaS">
+
+                                SaaS
+
+                            </option>
+
+
+                            <option value="Marketplace">
+
+                                Marketplace
+
+                            </option>
+
+
+                            <option value="Other">
+
+                                Other
+
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ==========================================
+                 FINANCIAL INFORMATION
+            =========================================== -->
+
+            <div class="tab-content active">
+
+
+                <h2>
+
+                    <i class="fa-solid fa-wallet"></i>
+
+                    Financial Analysis
+
+                </h2>
+
+
+
+                <div class="form-container">
+
+
+                    <!-- ==================================
+                         FUNDING
+                    =================================== -->
+
+                    <div class="form-group">
+
+                        <label for="fundingAmount">
+
+                            Available Funding
+
+                        </label>
+
+
+                        <input
+                            type="number"
+                            id="fundingAmount"
+                            min="0"
+                            placeholder="Example: 500000"
+                        >
+
+                    </div>
+
+
+
+                    <!-- ==================================
+                         REVENUE
+                    =================================== -->
+
+                    <div class="form-group">
+
+                        <label for="revenue">
+
+                            Monthly Revenue
+
+                        </label>
+
+
+                        <input
+                            type="number"
+                            id="revenue"
+                            min="0"
+                            placeholder="Example: 100000"
+                        >
+
+                    </div>
+
+
+
+                    <!-- ==================================
+                         BURN RATE
+                    =================================== -->
+
+                    <div class="form-group">
+
+                        <label for="burnRate">
+
+                            Monthly Burn Rate
+
+                        </label>
+
+
+                        <input
+                            type="number"
+                            id="burnRate"
+                            min="0"
+                            placeholder="Example: 75000"
+                        >
+
+                    </div>
+
+
+
+                    <!-- ==================================
+                         MARKETING EXPENSE
+                    =================================== -->
+
+                    <div class="form-group">
+
+                        <label for="marketingExpense">
+
+                            Marketing Expense
+
+                        </label>
+
+
+                        <input
+                            type="number"
+                            id="marketingExpense"
+                            min="0"
+                            placeholder="Example: 15000"
+                        >
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ==========================================
+                 PRODUCT & CUSTOMER
+            =========================================== -->
+
+            <div class="tab-content active">
+
+
+                <h2>
+
+                    <i class="fa-solid fa-chart-pie"></i>
+
+                    Product & Customer Information
+
+                </h2>
+
+
+
+                <div class="form-container">
+
+
+                    <!-- ==================================
+                         PRODUCT UNIQUENESS
+                    =================================== -->
+
+                    <div class="form-group">
+
+                        <label for="productUniquenessScore">
+
+                            Product Uniqueness Score (1-10)
+
+                        </label>
+
+
+                        <input
+                            type="number"
+                            id="productUniquenessScore"
+                            min="1"
+                            max="10"
+                            step="0.1"
+                            placeholder="Example: 8"
+                        >
+
+                    </div>
+
+
+
+                    <!-- ==================================
+                         CUSTOMER RETENTION
+                    =================================== -->
+
+                    <div class="form-group">
+
+                        <label for="customerRetentionRate">
+
+                            Customer Retention Rate (%)
+
+                        </label>
+
+
+                        <input
+                            type="number"
+                            id="customerRetentionRate"
+                            min="0"
+                            max="100"
+                            step="0.1"
+                            placeholder="Example: 75"
+                        >
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ==========================================
+                 ANALYZE BUTTON
+            =========================================== -->
+
+            <div class="button-container">
+
+
+                <button
+                    type="button"
+                    class="save-btn"
+                    id="analyzeBtn"
+                >
+
+                    <i class="fa-solid fa-rocket"></i>
+
+                    Analyze My Startup
+
+                </button>
+
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- ==========================================
+             RESULT SECTION
+        =========================================== -->
+
+        <div
+            class="analysis-card result-card"
+            id="resultSection"
+            style="display: none;"
+        >
+
+
+            <div class="tab-content active">
+
+
+                <!-- ==================================
+                     RESULT TITLE
+                =================================== -->
+
+                <h2>
+
+                    <i class="fa-solid fa-chart-line"></i>
+
+                    Startup Risk Analysis Result
+
+                </h2>
+
+
+
+                <!-- ==================================
+                     SUMMARY
+                =================================== -->
+
+                <div class="results-summary">
+
+
+                    <!-- PREDICTION -->
+
+                    <div class="result-box">
+
+                        <h3>
+
+                            Prediction
+
+                        </h3>
+
+
+                        <p id="prediction">
+
+                            -
+
+                        </p>
+
+                    </div>
+
+
+
+                    <!-- SUCCESS PROBABILITY -->
+
+                    <div class="result-box">
+
+                        <h3>
+
+                            Success Probability
+
+                        </h3>
+
+
+                        <p id="successProbability">
+
+                            0%
+
+                        </p>
+
+                    </div>
+
+
+
+                    <!-- FAILURE PROBABILITY -->
+
+                    <div class="result-box">
+
+                        <h3>
+
+                            Failure Probability
+
+                        </h3>
+
+
+                        <p id="failureProbability">
+
+                            0%
+
+                        </p>
+
+                    </div>
+
+
+
+                    <!-- HEALTH SCORE -->
+
+                    <div class="result-box">
+
+                        <h3>
+
+                            Startup Health Score
+
+                        </h3>
+
+
+                        <p id="healthScore">
+
+                            0/100
+
+                        </p>
+
+                    </div>
+
+
+
+                    <!-- OVERALL RISK -->
+
+                    <div class="result-box">
+
+                        <h3>
+
+                            Overall Risk
+
+                        </h3>
+
+
+                        <p id="riskLevel">
+
+                            -
+
+                        </p>
+
+                    </div>
+
+
+                </div>
+
+
+
+                <!-- ==================================
+                     RISK ANALYSIS
+                =================================== -->
+
+                <div class="result-details">
+
+
+                    <h2>
+
+                        <i class="fa-solid fa-triangle-exclamation"></i>
+
+                        Risk Analysis
+
+                    </h2>
+
+
+
+                    <div class="risk-grid">
+
+
+                        <!-- FINANCIAL RISK -->
+
+                        <div class="risk-item">
+
+                            <span>
+
+                                Financial Risk
+
+                            </span>
+
+
+                            <strong id="financialRisk">
+
+                                -
+
+                            </strong>
+
+                        </div>
+
+
+
+                        <!-- MARKET RISK -->
+
+                        <div class="risk-item">
+
+                            <span>
+
+                                Market Risk
+
+                            </span>
+
+
+                            <strong id="marketRisk">
+
+                                -
+
+                            </strong>
+
+                        </div>
+
+
+
+                        <!-- TEAM RISK -->
+
+                        <div class="risk-item">
+
+                            <span>
+
+                                Team Risk
+
+                            </span>
+
+
+                            <strong id="teamRisk">
+
+                                -
+
+                            </strong>
+
+                        </div>
+
+
+
+                        <!-- OPERATIONS RISK -->
+
+                        <div class="risk-item">
+
+                            <span>
+
+                                Operations Risk
+
+                            </span>
+
+
+                            <strong id="operationsRisk">
+
+                                -
+
+                            </strong>
+
+                        </div>
+
+
+
+                        <!-- BUSINESS ENVIRONMENT RISK -->
+
+                        <div class="risk-item">
+
+                            <span>
+
+                                Business Environment Risk
+
+                            </span>
+
+
+                            <strong id="businessEnvironmentRisk">
+
+                                -
+
+                            </strong>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- ==================================
+                     RISK FACTORS
+                =================================== -->
+
+                <div class="result-details">
+
+
+                    <h2>
+
+                        <i class="fa-solid fa-list-check"></i>
+
+                        Key Risk Factors
+
+                    </h2>
+
+
+                    <ul id="riskFactors"></ul>
+
+
+                </div>
+
+
+
+                <!-- ==================================
+                     RECOMMENDATIONS
+                =================================== -->
+
+                <div class="result-details">
+
+
+                    <h2>
+
+                        <i class="fa-solid fa-lightbulb"></i>
+
+                        Recommendations & Improvements
+
+                    </h2>
+
+
+                    <ul id="recommendations"></ul>
+
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+    </main>
+
+
+
+    <!-- ==========================================
+         JAVASCRIPT
+    =========================================== -->
+
+    <script src="./analysis.js"></script>
+
+
+</body>
+
+</html>

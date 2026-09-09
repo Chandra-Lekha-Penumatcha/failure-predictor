@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Startup Tracking</title>
+
+    <link rel="stylesheet" href="./tracking.css">
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+</head>
+
+<body>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+        <div class="sidebar-logo">
+            <i class="fa-solid fa-rocket"></i>
+            <span>Startup Risk</span>
+        </div>
+
+        <nav class="sidebar-nav">
+
+            <a href="./dashboard.html" class="nav-item">
+                <i class="fa-solid fa-chart-line"></i>
+                <span>Dashboard</span>
+            </a>
+
+            <a href="./analysis.html" class="nav-item">
+                <i class="fa-solid fa-magnifying-glass-chart"></i>
+                <span>Analysis</span>
+            </a>
+
+            <a href="./improvements.html" class="nav-item">
+                <i class="fa-solid fa-lightbulb"></i>
+                <span>Improvements</span>
+            </a>
+
+            <a href="./tracking.html" class="nav-item active">
+                <i class="fa-solid fa-chart-simple"></i>
+                <span>Tracking</span>
+            </a>
+
+            <a href="./rules.html" class="nav-item">
+                <i class="fa-solid fa-scale-balanced"></i>
+                <span>Rules & Regulations</span>
+            </a>
+
+        </nav>
+
+        <div class="sidebar-bottom">
+
+            <button id="logoutBtn" class="logout-btn">
+                <i class="fa-solid fa-right-from-bracket"></i>
+                <span>Logout</span>
+            </button>
+
+        </div>
+
+    </aside>
+
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+
+        <div class="page-header">
+
+            <div>
+                <h1>Startup Tracking</h1>
+
+                <p>
+                    Monitor your startup analysis history and track changes in risk over time.
+                </p>
+            </div>
+
+        </div>
+
+
+        <!-- SUMMARY CARDS -->
+        <section class="summary-cards">
+
+            <div class="summary-card">
+
+                <div class="summary-icon">
+                    <i class="fa-solid fa-file-circle-check"></i>
+                </div>
+
+                <div>
+                    <span>Total Analyses</span>
+                    <h2 id="totalAnalyses">0</h2>
+                </div>
+
+            </div>
+
+
+            <div class="summary-card">
+
+                <div class="summary-icon">
+                    <i class="fa-solid fa-building"></i>
+                </div>
+
+                <div>
+                    <span>Latest Startup</span>
+                    <h2 id="latestStartup">-</h2>
+                </div>
+
+            </div>
+
+
+            <div class="summary-card">
+
+                <div class="summary-icon">
+                    <i class="fa-solid fa-shield-halved"></i>
+                </div>
+
+                <div>
+                    <span>Latest Risk</span>
+                    <h2 id="latestRisk">-</h2>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- TRACKING TABLE -->
+        <section class="tracking-section">
+
+            <div class="section-header">
+
+                <div>
+                    <h2>Analysis History</h2>
+
+                    <p>
+                        Previous startup risk assessments.
+                    </p>
+                </div>
+
+                <button id="clearHistoryBtn" class="clear-btn">
+                    <i class="fa-solid fa-trash"></i>
+                    Clear History
+                </button>
+
+            </div>
+
+
+            <div class="table-wrapper">
+
+                <table id="trackingTable">
+
+                    <thead>
+
+                        <tr>
+                            <th>Company Name</th>
+                            <th>Industry</th>
+                            <th>Founded Year</th>
+                            <th>Success Probability</th>
+                            <th>Failure Probability</th>
+                            <th>Risk</th>
+                            <th>Analysis Date</th>
+                        </tr>
+
+                    </thead>
+
+                    <tbody id="trackingBody">
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="./tracking.js"></script>
+
+</body>
+</html>

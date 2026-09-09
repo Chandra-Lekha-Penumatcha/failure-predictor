@@ -1,0 +1,561 @@
+/* ==========================================
+   RESET
+========================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ==========================================
+   HTML / BODY
+========================================== */
+
+html,
+body {
+    width: 100%;
+    min-height: 100%;
+}
+
+
+body {
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    min-height: 100vh;
+
+    /*
+       IMPORTANT:
+
+       If assets is outside login-page:
+
+       login-page/
+       assets/
+
+       use ../assets/background.png
+    */
+
+    background:
+        url("../assets/background.png")
+        center center / cover no-repeat fixed;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+
+/* ==========================================
+   DARK OVERLAY
+========================================== */
+
+body::before {
+
+    content: "";
+
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0, 0, 0, 0.10);
+
+    z-index: -1;
+}
+
+
+/* ==========================================
+   PROJECT HEADER
+========================================== */
+
+.project-header {
+
+    position: absolute;
+
+    top: 25px;
+
+    left: 0;
+
+    width: 100%;
+
+    text-align: center;
+
+    color: #000;
+
+    z-index: 10;
+}
+
+
+.project-header h1 {
+
+    font-size: 42px;
+
+    font-weight: 800;
+
+    margin: 0;
+
+    letter-spacing: 0.5px;
+}
+
+
+.project-header h1 i {
+
+    margin-right: 10px;
+
+    font-size: 35px;
+}
+
+
+.project-header p {
+
+    margin-top: 8px;
+
+    font-size: 18px;
+
+    font-weight: 500;
+}
+
+
+/* ==========================================
+   LOGIN CONTAINER
+========================================== */
+
+.login-container {
+
+    width: 100%;
+
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding-top: 100px;
+}
+
+
+/* ==========================================
+   LOGIN BOX
+========================================== */
+
+.login-box {
+
+    width: 490px;
+
+    padding: 45px 48px;
+
+    background:
+        rgba(70, 30, 130, 0.60);
+
+    border:
+        1px solid rgba(255, 255, 255, 0.35);
+
+    border-radius: 18px;
+
+    backdrop-filter: blur(8px);
+
+    -webkit-backdrop-filter: blur(8px);
+
+    box-shadow:
+        0 15px 45px rgba(0, 0, 0, 0.30);
+
+    color: white;
+}
+
+
+/* ==========================================
+   LOGIN TITLE
+========================================== */
+
+.login-box h1 {
+
+    text-align: center;
+
+    font-size: 42px;
+
+    margin-bottom: 12px;
+
+    font-weight: 700;
+}
+
+
+.login-subtitle {
+
+    text-align: center;
+
+    font-size: 15px;
+
+    margin-bottom: 32px;
+
+    color: white;
+}
+
+
+/* ==========================================
+   INPUT BOX
+========================================== */
+
+.input-box {
+
+    position: relative;
+
+    width: 100%;
+
+    margin-bottom: 22px;
+}
+
+
+.input-box input {
+
+    width: 100%;
+
+    height: 58px;
+
+    padding:
+        0 55px 0 22px;
+
+    border:
+        2px solid rgba(255, 255, 255, 0.30);
+
+    border-radius: 30px;
+
+    outline: none;
+
+    background:
+        rgba(90, 45, 170, 0.55);
+
+    color: white;
+
+    font-size: 16px;
+
+    transition: 0.3s;
+}
+
+
+.input-box input:focus {
+
+    border-color: white;
+
+    background:
+        rgba(90, 45, 170, 0.70);
+}
+
+
+.input-box input::placeholder {
+
+    color: white;
+
+    opacity: 1;
+}
+
+
+/* ==========================================
+   EMAIL ICON
+========================================== */
+
+.input-icon {
+
+    position: absolute;
+
+    right: 22px;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    color: white;
+
+    font-size: 17px;
+
+    pointer-events: none;
+}
+
+
+/* ==========================================
+   PASSWORD BOX
+========================================== */
+
+.password-box input {
+
+    padding-right: 60px;
+}
+
+
+/* ==========================================
+   PASSWORD EYE BUTTON
+========================================== */
+
+.password-toggle {
+
+    position: absolute;
+
+    right: 12px;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    width: 42px;
+
+    height: 42px;
+
+    border: none;
+
+    outline: none;
+
+    background: transparent;
+
+    color: white;
+
+    cursor: pointer;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    z-index: 5;
+}
+
+
+.password-toggle i {
+
+    position: static;
+
+    transform: none;
+
+    color: white;
+
+    font-size: 17px;
+
+    pointer-events: none;
+}
+
+
+.password-toggle:hover {
+
+    color: #dddddd;
+}
+
+
+.password-toggle:hover i {
+
+    color: #dddddd;
+}
+
+
+/* ==========================================
+   OPTIONS
+========================================== */
+
+.options {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin:
+        5px 5px 25px;
+
+    font-size: 14px;
+}
+
+
+.options label {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    cursor: pointer;
+}
+
+
+.options input[type="checkbox"] {
+
+    width: 15px;
+
+    height: 15px;
+
+    cursor: pointer;
+}
+
+
+.options a {
+
+    color: white;
+
+    text-decoration: none;
+}
+
+
+.options a:hover {
+
+    text-decoration: underline;
+}
+
+
+/* ==========================================
+   LOGIN BUTTON
+========================================== */
+
+.login-btn {
+
+    width: 100%;
+
+    height: 55px;
+
+    border: none;
+
+    border-radius: 30px;
+
+    background: white;
+
+    color: #222;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 8px;
+}
+
+
+.login-btn:hover {
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.30);
+}
+
+
+.login-btn:disabled {
+
+    opacity: 0.7;
+
+    cursor: not-allowed;
+
+    transform: none;
+}
+
+
+/* ==========================================
+   REGISTER
+========================================== */
+
+.register {
+
+    text-align: center;
+
+    margin-top: 25px;
+
+    font-size: 15px;
+}
+
+
+.register a {
+
+    color: white;
+
+    font-weight: bold;
+
+    text-decoration: none;
+
+    margin-left: 4px;
+}
+
+
+.register a:hover {
+
+    text-decoration: underline;
+}
+
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width: 600px) {
+
+    .project-header {
+
+        top: 20px;
+
+        padding: 0 15px;
+    }
+
+
+    .project-header h1 {
+
+        font-size: 28px;
+    }
+
+
+    .project-header h1 i {
+
+        font-size: 24px;
+    }
+
+
+    .project-header p {
+
+        font-size: 14px;
+    }
+
+
+    .login-container {
+
+        padding-top: 100px;
+    }
+
+
+    .login-box {
+
+        width: 90%;
+
+        padding:
+            35px 25px;
+    }
+
+
+    .login-box h1 {
+
+        font-size: 34px;
+    }
+
+
+    .options {
+
+        font-size: 13px;
+    }
+
+}
